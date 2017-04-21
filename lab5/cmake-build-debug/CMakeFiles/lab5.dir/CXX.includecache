@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab5/BinaryHeap.h
+vector
+-
+dsexceptions.h
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab5/dsexceptions.h
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab5/Main.cpp
+vector
+-
+iostream
+-
+algorithm
+-
+random
+-
+BinaryHeap.h
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab5/BinaryHeap.h
+time.h
+-
+iomanip
+-
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab5/dsexceptions.h
+

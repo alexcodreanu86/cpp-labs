@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/Main.cpp
+iostream
+-
+MapHash.h
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/MapHash.h
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/MapHash.h
+QuadraticProbing.h
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/QuadraticProbing.h
+MapHashImpl.h
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/MapHashImpl.h
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/MapHashImpl.h
+MapHash.h
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/MapHash.h
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/NextPrime.cpp
+
+/Users/alex/Alex/classes/algorithms-csc-255/labs/lab4/QuadraticProbing.h
+vector
+-
+
