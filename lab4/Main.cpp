@@ -1,6 +1,6 @@
-#import <iostream>
+#include <iostream>
 
-#import "MapHash.h"
+#include "MapHash.h"
 
 typedef MapHash<std::string, int> container;
 typedef void (* action)(container &, std::string);

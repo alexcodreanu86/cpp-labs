@@ -50,6 +50,6 @@ public:
     void makeEmpty();
 };
 
-#import "MapHashImpl.h"
+#include "MapHashImpl.h"
 
 #endif
