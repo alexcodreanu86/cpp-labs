@@ -37,13 +37,15 @@ void MapHash<K,V>::makeEmpty() {
     table.makeEmpty();
 };
 
-template <class K, class V>
-class hash<Pair<K, V> > {
-public:
-    size_t operator() (const Pair<K, V> &pair) {
-        static hash<K> hs;
-        return hs(pair.key);
-    }
+namespace std {
+    template <class K, class V>
+    class hash<Pair<K, V> > {
+    public:
+        size_t operator() (const Pair<K, V> &pair) {
+            static hash<K> hs;
+            return hs(pair.key);
+        }
+    };
 };
 
 #endif

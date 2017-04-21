@@ -2,7 +2,7 @@
 #define LAB4_MAPHASHTEST_H
 
 #include <cassert>
-#import "MapHash.h"
+#include "MapHash.h"
 
 static void testIsEmpty();
 static void testInsertContains();
