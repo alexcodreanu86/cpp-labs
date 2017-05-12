@@ -36,10 +36,8 @@ float insertIntoHeap(const vector<int> &container) {
         heap.insert(element);
     }
 
-    int min;
-    heap.deleteMin(min);
     sortedTime = clock() - sortedTime;
-    return min * sortedTime;
+    return sortedTime;
 }
 
 void insertAllIntoHeap(const vector<int> &sorted, const vector<int> &reversed, const vector<int> &shuffled) {
@@ -54,10 +52,8 @@ float buildHeap(const vector<int> &container) {
     clock_t sortedTime;
     sortedTime = clock();
     BinaryHeap<int> heap(container);
-    int min;
-    heap.deleteMin(min);
     sortedTime = clock() - sortedTime;
-    return min * ((float) sortedTime);
+    return ((float) sortedTime);
 }
 
 void buildAllHeaps(const vector<int> &sorted, const vector<int> &reversed, const vector<int> &shuffled) {
