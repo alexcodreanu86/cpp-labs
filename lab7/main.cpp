@@ -1,9 +1,12 @@
 #include <iostream>
-#include "HashTableGenerationTest.h"
+#include "FileCompressor.h"
+#include "FileDecompressor.h"
 
 
 int main() {
-    HashTableGenerationTest::test();
-
+    FileCompressor compressor("in.txt", "encrypted.txt");
+    compressor.compress();
+    FileDecompressor decompressor("encrypted.txt", "result.txt");
+    decompressor.decompress();
     std::cout << "\033[0;32m√ All tests have passed!!!\n\033[m";
 }

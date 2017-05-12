@@ -105,19 +105,71 @@ CMakeFiles/lab7.dir/TreeNode.cpp.o.provides: CMakeFiles/lab7.dir/TreeNode.cpp.o.
 CMakeFiles/lab7.dir/TreeNode.cpp.o.provides.build: CMakeFiles/lab7.dir/TreeNode.cpp.o
 
 
+CMakeFiles/lab7.dir/FileCompressor.cpp.o: CMakeFiles/lab7.dir/flags.make
+CMakeFiles/lab7.dir/FileCompressor.cpp.o: ../FileCompressor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab7.dir/FileCompressor.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab7.dir/FileCompressor.cpp.o -c /Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileCompressor.cpp
+
+CMakeFiles/lab7.dir/FileCompressor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab7.dir/FileCompressor.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileCompressor.cpp > CMakeFiles/lab7.dir/FileCompressor.cpp.i
+
+CMakeFiles/lab7.dir/FileCompressor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab7.dir/FileCompressor.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileCompressor.cpp -o CMakeFiles/lab7.dir/FileCompressor.cpp.s
+
+CMakeFiles/lab7.dir/FileCompressor.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab7.dir/FileCompressor.cpp.o.requires
+
+CMakeFiles/lab7.dir/FileCompressor.cpp.o.provides: CMakeFiles/lab7.dir/FileCompressor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileCompressor.cpp.o.provides.build
+.PHONY : CMakeFiles/lab7.dir/FileCompressor.cpp.o.provides
+
+CMakeFiles/lab7.dir/FileCompressor.cpp.o.provides.build: CMakeFiles/lab7.dir/FileCompressor.cpp.o
+
+
+CMakeFiles/lab7.dir/FileDecompressor.cpp.o: CMakeFiles/lab7.dir/flags.make
+CMakeFiles/lab7.dir/FileDecompressor.cpp.o: ../FileDecompressor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab7.dir/FileDecompressor.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab7.dir/FileDecompressor.cpp.o -c /Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileDecompressor.cpp
+
+CMakeFiles/lab7.dir/FileDecompressor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab7.dir/FileDecompressor.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileDecompressor.cpp > CMakeFiles/lab7.dir/FileDecompressor.cpp.i
+
+CMakeFiles/lab7.dir/FileDecompressor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab7.dir/FileDecompressor.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileDecompressor.cpp -o CMakeFiles/lab7.dir/FileDecompressor.cpp.s
+
+CMakeFiles/lab7.dir/FileDecompressor.cpp.o.requires:
+
+.PHONY : CMakeFiles/lab7.dir/FileDecompressor.cpp.o.requires
+
+CMakeFiles/lab7.dir/FileDecompressor.cpp.o.provides: CMakeFiles/lab7.dir/FileDecompressor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileDecompressor.cpp.o.provides.build
+.PHONY : CMakeFiles/lab7.dir/FileDecompressor.cpp.o.provides
+
+CMakeFiles/lab7.dir/FileDecompressor.cpp.o.provides.build: CMakeFiles/lab7.dir/FileDecompressor.cpp.o
+
+
 # Object files for target lab7
 lab7_OBJECTS = \
 "CMakeFiles/lab7.dir/main.cpp.o" \
-"CMakeFiles/lab7.dir/TreeNode.cpp.o"
+"CMakeFiles/lab7.dir/TreeNode.cpp.o" \
+"CMakeFiles/lab7.dir/FileCompressor.cpp.o" \
+"CMakeFiles/lab7.dir/FileDecompressor.cpp.o"
 
 # External object files for target lab7
 lab7_EXTERNAL_OBJECTS =
 
 lab7: CMakeFiles/lab7.dir/main.cpp.o
 lab7: CMakeFiles/lab7.dir/TreeNode.cpp.o
+lab7: CMakeFiles/lab7.dir/FileCompressor.cpp.o
+lab7: CMakeFiles/lab7.dir/FileDecompressor.cpp.o
 lab7: CMakeFiles/lab7.dir/build.make
 lab7: CMakeFiles/lab7.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lab7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable lab7"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab7.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +179,8 @@ CMakeFiles/lab7.dir/build: lab7
 
 CMakeFiles/lab7.dir/requires: CMakeFiles/lab7.dir/main.cpp.o.requires
 CMakeFiles/lab7.dir/requires: CMakeFiles/lab7.dir/TreeNode.cpp.o.requires
+CMakeFiles/lab7.dir/requires: CMakeFiles/lab7.dir/FileCompressor.cpp.o.requires
+CMakeFiles/lab7.dir/requires: CMakeFiles/lab7.dir/FileDecompressor.cpp.o.requires
 
 .PHONY : CMakeFiles/lab7.dir/requires
 

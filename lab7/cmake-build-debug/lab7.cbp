@@ -85,6 +85,18 @@
 		<Unit filename="/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/BinaryHeap.h">
 			<Option target="lab7"/>
 		</Unit>
+		<Unit filename="/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileCompressor.cpp">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileCompressor.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileDecompressor.cpp">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/FileDecompressor.h">
+			<Option target="lab7"/>
+		</Unit>
 		<Unit filename="/Users/alex/Alex/classes/algorithms-csc-255/labs/lab7/HashTableGenerationTest.h">
 			<Option target="lab7"/>
 		</Unit>

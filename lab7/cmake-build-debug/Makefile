@@ -123,6 +123,60 @@ lab7/fast:
 	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/build
 .PHONY : lab7/fast
 
+FileCompressor.o: FileCompressor.cpp.o
+
+.PHONY : FileCompressor.o
+
+# target to build an object file
+FileCompressor.cpp.o:
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileCompressor.cpp.o
+.PHONY : FileCompressor.cpp.o
+
+FileCompressor.i: FileCompressor.cpp.i
+
+.PHONY : FileCompressor.i
+
+# target to preprocess a source file
+FileCompressor.cpp.i:
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileCompressor.cpp.i
+.PHONY : FileCompressor.cpp.i
+
+FileCompressor.s: FileCompressor.cpp.s
+
+.PHONY : FileCompressor.s
+
+# target to generate assembly for a file
+FileCompressor.cpp.s:
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileCompressor.cpp.s
+.PHONY : FileCompressor.cpp.s
+
+FileDecompressor.o: FileDecompressor.cpp.o
+
+.PHONY : FileDecompressor.o
+
+# target to build an object file
+FileDecompressor.cpp.o:
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileDecompressor.cpp.o
+.PHONY : FileDecompressor.cpp.o
+
+FileDecompressor.i: FileDecompressor.cpp.i
+
+.PHONY : FileDecompressor.i
+
+# target to preprocess a source file
+FileDecompressor.cpp.i:
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileDecompressor.cpp.i
+.PHONY : FileDecompressor.cpp.i
+
+FileDecompressor.s: FileDecompressor.cpp.s
+
+.PHONY : FileDecompressor.s
+
+# target to generate assembly for a file
+FileDecompressor.cpp.s:
+	$(MAKE) -f CMakeFiles/lab7.dir/build.make CMakeFiles/lab7.dir/FileDecompressor.cpp.s
+.PHONY : FileDecompressor.cpp.s
+
 TreeNode.o: TreeNode.cpp.o
 
 .PHONY : TreeNode.o
@@ -186,6 +240,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lab7"
+	@echo "... FileCompressor.o"
+	@echo "... FileCompressor.i"
+	@echo "... FileCompressor.s"
+	@echo "... FileDecompressor.o"
+	@echo "... FileDecompressor.i"
+	@echo "... FileDecompressor.s"
 	@echo "... TreeNode.o"
 	@echo "... TreeNode.i"
 	@echo "... TreeNode.s"
