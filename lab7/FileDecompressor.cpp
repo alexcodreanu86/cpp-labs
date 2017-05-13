@@ -31,10 +31,19 @@ void printPaths(map<char, vector<bool>> & paths) {
 
 }
 
+void printTree(TreeNode * node, string currentPath = "") {
+
+    if (node->value > '\0') {
+        cout << "After " << node->value << " path " << currentPath << '\n';
+    } else {
+        printTree(node->leftNode, currentPath + '0');
+        printTree(node->rightNode, currentPath + '1');
+    }
+}
+
 void FileDecompressor::decompress() {
     map<char, vector<bool> > pathsFromFile;
 
-    size_t numberOfBits;
     vector<bool> bits;
     readFromFile(compressedFilePath, pathsFromFile, bits);
     Tree tree(0, 0);
@@ -62,24 +71,27 @@ void FileDecompressor::readFromFile(const string & filePath, map<char, vector<bo
 }
 
 
-void FileDecompressor::buildTreeFromPaths(const map<char, vector<bool>> &pathsFromFile, const Tree &tree) {
-    for (auto path : pathsFromFile) {
-        TreeNode * lastNode = tree.root;
-        for (auto bit : path.second) {
-            if (bit) {
-                if (lastNode->rightNode == nullptr)
-                    lastNode->rightNode = new TreeNode;
-                lastNode = lastNode->rightNode;
-            } else {
-                if (lastNode->leftNode == nullptr)
-                    lastNode->leftNode = new TreeNode;
-                lastNode = lastNode->leftNode;
-            }
+void buildPathForTreeNode(TreeNode * node, vector<bool> paths, char value) {
+    for (auto bit : paths) {
+        if (bit) {
+            if (node->rightNode == nullptr)
+                node->rightNode = new TreeNode();
+            node = node->rightNode;
+        } else {
+            if (node->leftNode == nullptr)
+                node->leftNode = new TreeNode();
+            node = node->leftNode;
         }
-        lastNode->value = path.first;
     }
+    node->value = value;
 }
 
+
+void FileDecompressor::buildTreeFromPaths(const map<char, vector<bool>> &pathsFromFile, const Tree &tree) {
+    for (auto path : pathsFromFile) {
+        buildPathForTreeNode(tree.root, path.second, path.first);
+    }
+}
 void FileDecompressor::outputDecodedText(const string & path, Tree & tree, vector<bool> bits) {
     ofstream outFile;
     outFile.open(path);

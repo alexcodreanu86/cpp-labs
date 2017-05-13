@@ -10,24 +10,16 @@ public:
     char value;
     TreeNode * leftNode;
     TreeNode * rightNode;
-    TreeNode() {
-        weight = 0;
-        leftNode = nullptr;
-        rightNode = nullptr;
-        char value = 0;
-    }
+    TreeNode() :  leftNode(nullptr), rightNode(nullptr),
+                  weight(0), value('\0') { }
 
-    TreeNode(char v, int w) : value(v), weight(w) {
-        leftNode = nullptr;
-        rightNode = nullptr;
-    }
+    TreeNode(char v, int w) : value(v), weight(w),
+                              leftNode(nullptr), rightNode(nullptr) {}
 
-    TreeNode(TreeNode const & other) {
-        weight = other.weight;
-        leftNode = other.leftNode;
-        rightNode = other.rightNode;
-        value = other.value;
-    }
+    TreeNode(TreeNode const & other) : leftNode(other.leftNode),
+                                       rightNode(other.rightNode),
+                                       weight(other.weight),
+                                       value(other.value) {}
 
     bool operator<(const TreeNode & rhs) const {
         return weight < rhs.weight;
@@ -47,10 +39,9 @@ public:
 
     void merge(Tree & other) {
         TreeNode * leftChild = root;
-        root = new TreeNode();
+        root = new TreeNode(0, leftChild->weight + other.root->weight);
         root->leftNode = leftChild;
         root->rightNode = other.root;
-        root->weight = leftChild->weight + other.root->weight;
         other.root = nullptr;
     }
 

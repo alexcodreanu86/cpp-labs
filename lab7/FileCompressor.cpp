@@ -44,8 +44,10 @@ Tree * FileCompressor::buildTree(map<char, int> &charsOccurrences) {
 
     while (heap.getCurrentSize() > 1) {
         Tree * smallest;
-        heap.deleteMin(smallest); Tree * secondSmallest;
+        heap.deleteMin(smallest);
+        Tree * secondSmallest;
         heap.deleteMin(secondSmallest);
+
         smallest->merge(*secondSmallest);
         delete secondSmallest;
         heap.insert(smallest);
@@ -84,8 +86,6 @@ void FileCompressor::writeToFile(const string &filePath, const map<char, string>
     for (auto charPath : paths) {
         outFile << charPath.first << CHAR_PATH_SEPARATOR << charPath.second << NODES_SEPARATOR;
     }
-
-    cout << "Bits size before " << bits.size() << '\n';
 
     outFile << bits.size() << NODES_SEPARATOR;
 
